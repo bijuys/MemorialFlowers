@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^funeralflowers.ca
+RewriteRule (.*) http://www.funeralflowers.ca/$1 [R=301,L]
+RewriteCond $1 !^(WzIK1Sk\.html|index\.php|images|css|js|admin|productres|language|resources|lang|templates|templates_site|web|cache|assets|banners|sitemap|uploads|ckeditor|xadmin|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]

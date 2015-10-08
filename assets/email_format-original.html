@@ -1,0 +1,100 @@
+<table cellpadding="5" cellspacing="0" border="0" width="700" style="background-color:#FFFFFF;">
+    
+    <tr>
+        <td>
+            
+            <table width="100%">
+            <tr>
+            <td>
+            {email_header}
+			
+            <p>Invoice number: <span style="font-weight:bold; font-size:17px; color:#DB2929">{invoice_num}</span></p>
+            </td>
+            <td align="right">
+			
+				<img src="http://dignity.memorialflowers.ca/templates/dignity/img/dignityflowers-logo-213x45.png" alt="Funeral Flowers" width="213" height="45" />
+			<!--
+			<img src="http://www.funeralflowers.ca/templates/default/images/affiliates_logo/{affi_logo}" alt="Funeral Flowers" width="330" height="75" /><br />
+			Served by <img src="http://www.funeralflowers.ca/templates/default/images/logo_1.png" alt="Funeral Flowers" width="150" height="30" />
+			-->
+			
+			
+			</td>
+            </tr>
+            </table>
+            
+            
+            
+            
+                {items}
+           
+            
+            
+            
+            
+            <table width="100%" cellpadding="5" cellspacing="0" border="1">
+                <tr>
+                    <th style="background-color:#EEEEEE;">Billing Information</th>
+                    <th style="background-color:#EEEEEE;">Invoice Details</th>
+                </tr>
+                <tr>
+                    <td>
+                        {firstname} {lastname}<br/>
+                        {address1}<br/>
+                        {address2}<br/>
+                        {city}, {postalcode}<br/>
+                        {country}<br/>
+                        <br/>
+                        Email: {email} <br/>
+                        Phone: {dayphone} / {evephone}<br/>                
+                    </td>
+                    <td>
+                        <table cellpadding="2" cellspacing="0" border="0">
+                            <tr>
+                                <td>Product Price</td>
+                                <td>:</td>
+                                <td>{product_price}</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charge</td>
+                                <td>:</td>
+                                <td>{delivery_charge}</td>
+                            </tr>
+                             <tr>
+                                <td>Service Charge</td>
+                                <td>:</td>
+                                <td>{service_charge}</td>
+                            </tr>
+							<tr>
+                                <td>Same Day Charge</td>
+                                <td>:</td>
+                                <td>{surcharge}</td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td>:</td>
+                                <td>{discount}</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>:</td>
+                                <td>{tax}</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>:</td>
+                                <td>{grand_total}</td>
+                            </tr>
+                        </table>                    
+                    </td>
+                </tr>
+            </table>
+            
+          
+        </td>
+    </tr>
+    <tr>
+        <td>Thank You for ordering from memorialflowers.ca
+We hope you enjoy the flowers!</td>
+    </tr>
+</table>

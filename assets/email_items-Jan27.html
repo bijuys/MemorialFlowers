@@ -1,0 +1,38 @@
+<p>Item #{counter} Delivery to:  {firstname} {lastname}, {address1} {address2}, {city}-{postalcode}, {province},{country} Phone:{phone}</p>
+
+<table width="100%" cellpadding="5" cellspacing="0" border="1">
+    <tr>
+        <th style="background-color:#EEEEEE;">Image</th>
+        <th style="background-color:#EEEEEE;">Product</th>
+        <th style="background-color:#EEEEEE;">Price</th>
+        <th style="background-color:#EEEEEE;">Quantity</th>
+        <th style="background-color:#EEEEEE;">Total</th>
+    </tr>
+    <tr>
+        <td>{product_image}</td>
+        <td><strong>{product_name}</strong>
+				<p>{product_id}</p>
+                <p>{product_description}</p>
+                <p>This bouquet comes to via UPS.</p>        </td>
+        <td>{price}</td>
+        <td>{quantity}</td>
+        <td>{total}</td>
+    </tr>
+    <tr>
+        <td>Additional Items</td>
+        <td>{addons}</td>
+        <td>-</td>
+        <td>-</td>
+        <td>{addon_price}</td>
+    </tr>
+    <tr>
+        <td colspan="5">
+            <p><strong><u>Your enclosure card reads</u>:</strong></p>
+            <p>{message}</p>
+            <hr/>
+            <p style="text-align: right;">For arrival on: {delivery_date}<br />
+                    Shipping method: Priority Overnight </p>
+        </td>
+    </tr>
+</table>
+                

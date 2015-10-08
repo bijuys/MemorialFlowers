@@ -1,0 +1,19 @@
+// JavaScript Document
+$(document).ready(function(){
+	$("#addmore").click(function(){
+		$("#price-div").append('<p><input type="text" name="option[]" id="option[]" /> <input name="price[]" type="text" id="price[]" size="7" /> <small>[<a href="##" class="deloption">Del</a>]</small>');
+		$(".deloption").bind('click',function(){
+			$(this).parent().parent().remove();
+		});
+	});
+	
+	$(".remove").click(function(){
+		$(this).remove();
+		alert('test');
+	});
+	
+	$(".deloption").click(function(){
+			$(this).parent().parent().remove();
+	});
+	
+});

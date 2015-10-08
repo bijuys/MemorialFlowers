@@ -1,0 +1,86 @@
+<table width="100%" cellpadding="5" cellspacing="0" border="1">
+<tr>
+<th style="background-color:#EEEEEE;" colspan="2">
+<span style="font-weight:bold; font-size:20px;"><center>Item #{counter} - DS{orderitem_id}</center></span>
+</th>
+</tr>
+            	<tr>
+            		<th style="background-color:#EEEEEE;">Recipient Information</th>
+                    <th style="background-color:#EEEEEE;">Delivery Date</th>
+              	</tr>
+
+<tr>
+    <td rowspan="5">{firstname} {lastname}<br /><br />
+    				
+                    <span style="color:#990000;">{location_type}:</span> {location_type_name}<br />
+    				{address1} {address2}<br />
+                    {city}-{postalcode}<br />
+                    {province},{country}<br />
+                    Phone:{phone}</td>
+    <td align="right"><span style="font-weight:bold; font-size:17px; color:#DB2929"><center>{delivery_date}</center></span></td>
+  </tr>
+  <tr>
+    <th style="background-color:#EEEEEE;">Card Message</td>
+  </tr>
+  <tr>
+    <td>{message}</td>
+  </tr>
+
+<tr>
+    <th style="background-color:#EEEEEE;">Special Notes</td>
+  </tr>
+  <tr>
+    <td>{special_note}</td>
+  </tr>
+
+
+
+
+
+
+<tr>
+<td colspan="2">
+
+
+
+<table width="100%" cellpadding="5" cellspacing="0" border="1">
+    <tr>
+        <th style="background-color:#EEEEEE;">Image</th>
+        <th style="background-color:#EEEEEE;">Product</th>
+        <th style="background-color:#EEEEEE;">Price</th>
+        <th style="background-color:#EEEEEE;">Quantity</th>
+        <th style="background-color:#EEEEEE;">Total</th>
+    </tr>
+    <tr height="110">
+        <td>{product_image}</td>
+        <td><p><strong><big>#{product_code}</big></strong></p>
+            <p><strong>
+            {product_name}</strong>
+                <p>{product_description}</p>
+                </td>
+        <td>{price}</td>
+        <td>{quantity}</td>
+        <td>{total}</td>
+    </tr>
+    <tr>
+        <td>Additional Items</td>
+        <td>{addons}</td>
+        <td>-</td>
+        <td>-</td>
+        <td>{addon_price}</td>
+    </tr>
+    <tr>
+        <td colspan="5">
+           
+                    <p>{delivery_info}</p>
+        </td>
+    </tr>
+</table>
+
+
+
+</td>
+</tr>
+
+
+         </table>       
